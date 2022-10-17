@@ -1,0 +1,177 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.main{
+    width: 1270px;
+    margin: auto;
+}
+.header{
+    background-color: rgb(32, 133, 167);
+    display: flex;
+    flex-direction: column;
+}
+
+.top-nav{
+    margin: auto;
+    width: 75%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+h1{
+    color: white;
+    font-size: 3pc;
+    flex: 50%;
+    padding: 10px;
+}
+
+.top-nav p{
+    color: white;
+    font-size: x-large;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.container{
+    width: 75%;
+    margin: auto;
+}
+
+.cityContainer{
+    border-bottom: 2px solid black ;
+    display: flex;
+    align-items: center;
+}
+
+h2{
+    font-size: xx-large;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex: 50%;
+}
+
+.cityContainer p{
+    font-size: larger;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+#temp{
+    margin-right: 10px;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+.mid-page{
+    display: flex;
+    padding-top: 20px;
+}
+
+.column1{
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+h3{
+    margin: 10px;
+    text-align: center;
+}
+
+#img{
+    padding: 20px;
+    width: 179px;
+    border-radius: 50%;
+}
+
+.column1 p{
+    margin: 10px;
+    text-align: center;
+}
+
+.temp{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: x-large;
+}
+
+.column2{
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+.column2 p{
+    margin: 10px;
+    text-align: center;
+}
+
+.column3{
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+.column3 p{
+    margin: 10px;
+    text-align: center;
+}
+
+.column4{
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.column4 p{
+    margin: 10px;
+    text-align: center;
+}
+
+.bottom-page{
+    display: flex;
+    border: 2px solid black;
+    background-color: lightgray;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.bottom-page img{
+    padding: 20px;
+}
+
+.cookieMsg{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 2;
+}
+
+h4{
+    text-align: left;
+}
+.cookieMsg p{
+    overflow-wrap: normal;
+}
+
+.button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+}
+
+.accept{
+    padding: 5px 10px 5px 10px;
+    background-color: lightblue;
+    box-shadow: 2px 2px;
+}

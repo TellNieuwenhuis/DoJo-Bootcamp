@@ -1,0 +1,28 @@
+.search input{
+    color: rgb(17, 167, 167);
+    font-weight: bold;
+    background-color: rgb(243, 241, 241);
+    border-radius: 50px;
+    border: 2px solid rgb(5, 201, 201);
+    margin: 5px 5px 5px 5px;
+    height: 30px;
+    width: 150px;
+}
+.pluss input{
+    color: rgb(253, 250, 250);
+    font-size: 1.5em;
+    background-color: rgb(5, 170, 170);
+    border-radius: 50%;
+    border:1px solid aqua;
+    margin: 5px 5px 5px 5px;
+    height: 30px;
+    width: 30px;
+}
+.creat input{
+    color: white;
+    background-color: rgb(13, 112, 173);
+    margin: 5px 5px 5px 5px;
+    box-shadow: 2px 2px black;
+    height: 30px;
+    width: 150px;
+}

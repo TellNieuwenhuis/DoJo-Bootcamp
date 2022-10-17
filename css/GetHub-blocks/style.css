@@ -1,0 +1,40 @@
+body{
+    background-color: gray;
+}
+h1{
+    text-align: center;
+    font-family: serif;
+    color: lightseagreen;
+}
+.container{
+    width: 700px;
+    height: 800px;
+    background-color: black;
+    margin: 0px auto;
+    padding: 10px;
+}
+.top-nav{
+    height: 200px;
+    background-color: greenyellow;
+    margin: 15px 10px 15px 10px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.mid-nav{
+    height: 200px;
+    background-color: brown;
+    margin: 15px 10px 15px 10px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.bottom-nav{
+    height: 200px;
+    background-color: gold;
+    margin: 15px 10px 15px 10px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+

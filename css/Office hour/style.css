@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    border: solid 1px black;
+    background-color: green;
+}
+.navbar {
+    border: solid 1px black;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.main-content{
+    display: flex;
+    height: 600px;
+    justify-self: space-between;
+}
+.column {
+    border: solid 1px black;
+    background-color: blue;
+    margin-top:20px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    justify-content: space-between;
+}
+a.content-links{
+    color: black;
+    text-decoration: none;
+    margin-top: 4rem;
+    color: red;
+    padding-bottom: 50px;
+}
+
+/* BONUS PART */
+
+/* .box{
+    color: aliceblue;
+    background-color:rebeccapurple;
+    width: 125px;
+    height: 125px;
+} */
