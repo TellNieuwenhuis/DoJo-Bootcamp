@@ -1,13 +1,13 @@
+/*var cookieDiv = document.querySelector(".cookieNote")
+*/
+/*
+function removeCookie(){
+    cookieDiv.remove();
+}
+*/ /*optional way to remove cookies*/
+
 function cityAlert(element){
-    alert('Burbank');
-}
-
-function cityAlert2(element){
-    alert('Chicago');
-}
-
-function cityAlert3(element){
-    alert('Dallas');
+    alert('Loading weather report...');
 }
 
 function removeCookie(){
@@ -15,15 +15,25 @@ function removeCookie(){
     remove1.remove('.bottom-page');
 }
 
-function selectTemp(element){
-    var x = element.value;
-    var temp = document.getElementById('high').innerHTML
-    var Fconvert = temp * 1.8 + 32;
-    var Cconvert = (temp - 32) * 0.556;
-    if(element.value == 'f'){
-        console.log(Fconvert)
-        
-    }else{
-        console.log(Cconvert)
+function changeToF(temp) {
+    return Math.round(9 / 5 * temp + 32);
+}
+
+function changeToC(temp) {
+    return Math.round(5 / 9 * (temp - 32));
+}
+
+function convertTemp(element){
+    console.log(element.value);
+    for(var i = 1; 1<9; i++){
+        var tempSpan = document.querySelector("#temp" + i);
+        var tempVal = parseInt(tempSpan.innerText);
+        if(element.value == 'C'){
+            tempSpan.innerText = changeToC(tempVal);
+            console.log(element.value)
+        }else{
+            tempSpan.innerText = changeToF(tempVal);
+            console.log(element.value)
+        }
     }
 }

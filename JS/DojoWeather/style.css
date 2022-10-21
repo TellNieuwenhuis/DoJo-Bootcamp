@@ -1,177 +1,156 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
-.main{
-    width: 1270px;
-    margin: auto;
+
+.body {
+    font-family: 'Roboto', sans-serif;
 }
-.header{
+
+.header {
     background-color: rgb(32, 133, 167);
-    display: flex;
-    flex-direction: column;
+    color: white;
 }
 
-.top-nav{
-    margin: auto;
-    width: 75%;
+.top-nav {
     display: flex;
-    justify-content: flex-start;
+    height: 120px;
     align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
-h1{
+.top-nav ul {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    /* this removes the numbers or dots infront of the links*/
+}
+
+.top-nav h1 {
     color: white;
     font-size: 3pc;
-    flex: 50%;
     padding: 10px;
 }
 
-.top-nav p{
+.top-nav a {
     color: white;
-    font-size: x-large;
-    margin-left: 20px;
+    text-decoration: none;
+    /* this removes the underline to the links*/
+    font-size: 1.5pc;
+}
+
+
+.cityContainer {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    border-bottom: 2px solid black;
+}
+
+.cityContainer h2 {
+    font-size: 2pc;
+}
+
+.cityContainer,
+.cityContainer label {
+    font-size: 1.5pc;
+    padding: 5px;
+}
+
+.cityContainer select {
+    width: 60px;
+}
+
+.mid-page {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    text-align: center;
+    background-color: lightgray;
+    padding: 40px 0;
     margin-right: 20px;
 }
 
-.container{
-    width: 75%;
-    margin: auto;
+.column:last-child {
+    margin-right: 0;
 }
 
-.cityContainer{
-    border-bottom: 2px solid black ;
+.column img {
+    border-radius: 50%;
+    width: 156px;
+    margin: 40px 0;
+}
+
+.column p {
+    font-size: 1.5pc;
+}
+
+.temps {
+    margin-top: 20px;
     display: flex;
+    justify-content: space-around;
+}
+
+.high,
+.low {
+    font-size: 1.5pc;
+    font-weight: bold;
+}
+
+.high::after,
+.low::after {
+    content: " o ";
+}
+
+.high {
+    color: red;
+}
+
+.low {
+    color: blue;
+}
+
+.bottom-page {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+}
+
+.cookieNote {
+    box-sizing: border-box;
+    width: 1000px;
+    height: 160px;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-h2{
-    font-size: xx-large;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    flex: 50%;
+.cookieMsg {
+    width: 70%;
 }
 
-.cityContainer p{
-    font-size: larger;
-    font-weight: bold;
-    margin-right: 20px;
+.cookieMsg h2 {
+    font-size: 1.5pc;
 }
 
-#temp{
-    margin-right: 10px;
-    padding: 5px;
-    border: 2px solid black;
+.cookieMsg p {
+    font-size: 1pc;
 }
 
-.mid-page{
-    display: flex;
-    padding-top: 20px;
-}
-
-.column1{
-    background-color: lightgray;
-    display: flex;
-    flex-direction: column;
-    margin-right: 10px;
-    margin-left: 5px;
-}
-
-h3{
-    margin: 10px;
-    text-align: center;
-}
-
-#img{
-    padding: 20px;
-    width: 179px;
-    border-radius: 50%;
-}
-
-.column1 p{
-    margin: 10px;
-    text-align: center;
-}
-
-.temp{
-    display: flex;
-    justify-content: space-evenly;
-    font-size: x-large;
-}
-
-.column2{
-    background-color: lightgray;
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-    margin-right: 15px;
-}
-
-.column2 p{
-    margin: 10px;
-    text-align: center;
-}
-
-.column3{
-    background-color: lightgray;
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-    margin-right: 15px;
-}
-
-.column3 p{
-    margin: 10px;
-    text-align: center;
-}
-
-.column4{
-    background-color: lightgray;
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-}
-
-.column4 p{
-    margin: 10px;
-    text-align: center;
-}
-
-.bottom-page{
-    display: flex;
-    border: 2px solid black;
-    background-color: lightgray;
-    margin-top: 10px;
-    width: 100%;
-}
-
-.bottom-page img{
-    padding: 20px;
-}
-
-.cookieMsg{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    flex: 2;
-}
-
-h4{
-    text-align: left;
-}
-.cookieMsg p{
-    overflow-wrap: normal;
-}
-
-.button{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 10px;
-}
-
-.accept{
-    padding: 5px 10px 5px 10px;
-    background-color: lightblue;
-    box-shadow: 2px 2px;
+.accept {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: 2px solid #000;
+    box-shadow: 4px 4px #000;
+    background-color: #9fc5f8;
+    cursor: pointer;
 }

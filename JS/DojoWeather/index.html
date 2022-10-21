@@ -1,80 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DojoWeather</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">  -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="main">
-        <div class="header">
-            <div class="top-nav">
-                <h1>DojoWeather</h1>
-                <p onclick="cityAlert(this)">Burbank</p>
-                <p onclick="cityAlert2(this)">Chicago</p>
-                <P onclick="cityAlert3(this)">Dallas</P>
+    <div class="header">
+        <div class="top-nav">
+            <h1>DojoWeather</h1>
+            <ul class="links">
+                <li onclick="cityAlert(this)"><a href="#">Burbank</a></li>
+                <li onclick="cityAlert(this)"><a href="#">Chicago</a></li>
+                <li onclick="cityAlert(this)"><a href="#">Dallas</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="cityContainer">
+            <h2>San Jose</h2>
+            <form> 
+                <label>show temperature in</label>
+                <select name="temp-select" onchange="convertTemp(this)">
+                    <option value="c">C</option>
+                    <option value="f">F</option>
+                </select>
+            </form>
+        </div>
+        <div class="mid-page">
+            <div class="column">
+                <h1>Today</h1>
+                <img src="assets/some_rain.png" alt="rain img">
+                <p>some rain</p>
+                <p class="temps">
+                    <span class="high" id="temp1">24</span>
+                    <span class="low" id="temp2">18</span>
+                </p>
+            </div>
+            <div class="column">
+                <h1>Tomorrow</h1>
+                <img src="assets/some_sun.png" alt="sun img">
+                <p>some sun</p>
+                <p class="temps">
+                    <span class="high" id="temp3">27</span>
+                    <span class="low" id="temp4">19</span>
+                </p>
+            </div>
+            <div class="column">
+                <h1>Friday</h1>
+                <img src="assets/some_clouds.png" alt="rain img">
+                <p>some rain</p>
+                <p class="temps">
+                    <span class="high" id="temp5">21</span>
+                    <span class="low" id="temp6">16</span>
+                </p>
+            </div>
+            <div class="column">
+                <h1>Saturday</h1>
+                <img src="assets/some_sun.png" alt="rain img">
+                <p>some rain</p>
+                <p class="temps">
+                    <span class="high" id="temp7">26</span>
+                    <span class="low" id="temp8">21</span>
+                </p>
             </div>
         </div>
-        <div class="container">
-            <div class="currentCity">
-                <div class="cityContainer">
-                    <h2>San Jose</h2>
-                    <p>show temperature in</p>
-                    <select name="temp" id="temp" onchange="selectTemp(this)">
-                        <option value="c">C</option>
-                        <option value="f">F</option>
-                    </select>
-                </div>
-            </div>
-            <div class="mid-page">
-                <div class="column1">
-                    <h3>Today</h3>
-                    <img src="assets\some_rain.png" alt="rain img" id="img">
-                    <p>some rain</p>
-                    <div class="temp">
-                        <p id="high">24</p>
-                        <p id="low">18</p>
-                    </div>
-                </div>
-                <div class="column2">
-                    <h3>Tomorrow</h3>
-                    <img src="assets\some_sun.png" alt="sun img" id="img">
-                    <p>some sun</p>
-                    <div class="temp">
-                        <p id="high">27</p>
-                        <p id="low">19</p>
-                    </div>
-                </div>
-                <div class="column3">
-                    <h3>Friday</h3>
-                    <img src="assets\some_clouds.png" alt="rain img" id="img">
-                    <p>some rain</p>
-                    <div class="temp">
-                        <p id="high">21</p>
-                        <p id="low">16</p>
-                    </div>
-                </div>
-                <div class="column4">
-                    <h3>Saturday</h3>
-                    <img src="assets\some_sun.png" alt="rain img" id="img">
-                    <p>some rain</p>
-                    <div class="temp">
-                        <p id="high">26</p>
-                        <p id="low">21</p>
-                    </div>
-                </div>
-            </div>
-            <div class="bottom-page">
-                <img src="assets\cookie.png" alt="cookie img">
+        <div class="bottom-page">
+            <div class="cookieNote">
+                <img src="assets/cookie.png" alt="cookie img">
                 <div class="cookieMsg">
-                    <h4>Stop! Cookie time</h4>
-                    <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="Read-More"> Read More...</a></p>
+                    <h2>Stop! Cookie time</h2>
+                    <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media
+                        features and to analyse our traffic. <a href="Read-More"> Read More...</a></p>
                 </div>
-                <div class="button">
-                    <button onclick="removeCookie()" class="accept">I Accept</button>
-                </div>
+                <button onclick="removeCookie()" class="accept">I Accept</button>
             </div>
         </div>
     </div>
